@@ -8,22 +8,42 @@
 
 #import "IPViewController.h"
 
-@interface IPViewController ()
+@interface IPViewController () <UITableViewDelegate, UITableViewDataSource>
 
 @end
+
+#define kReuseIdentifier @"reuse"
 
 @implementation IPViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    self.navigationItem.title = @"IPShortcut";
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
+    self.tableView.frame = self.view.bounds;
+    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:kReuseIdentifier];
+    [self.view addSubview:self.tableView];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark UITableViewDataSource
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 250;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kReuseIdentifier];
+    cell.textLabel.text = [@(indexPath.row) stringValue];
+    return cell;
+}
+
+#pragma mark UITableViewDelegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSLog(@"Selected %lu", indexPath.row);
 }
 
 @end

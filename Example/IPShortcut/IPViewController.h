@@ -8,6 +8,8 @@
 
 @import UIKit;
 
-@interface IPViewController : UIViewController
+#import <IPShortcut/IPShortcutTableViewController.h>
+
+@interface IPViewController : IPShortcutTableViewController
 
 @end
