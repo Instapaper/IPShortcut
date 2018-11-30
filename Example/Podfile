@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'IPShortcut_Example' do
+  pod 'IPShortcut', :path => '../'
+
+  target 'IPShortcut_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
