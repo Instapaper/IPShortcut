@@ -22,7 +22,7 @@ pod 'IPShortcut'
 
 ## Author
 
-Brian Donohue, briandonohue@pinterest.com
+Brian Donohue, briandonohue@team.instapaper.com
 
 ## License
 
