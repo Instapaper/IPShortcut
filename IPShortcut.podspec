@@ -8,7 +8,7 @@ IPShortcut lets you easily add UIKeyCommand shortcuts for view controllers displ
                        DESC
 
   s.homepage         = 'https://github.com/Instapaper/IPShortcut'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.screenshots     = 'https://i.imgur.com/LZAafLt.png'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Brian Donohue' => 'brian@team.instapaper.com' }
   s.source           = { :git => 'https://github.com/Instapaper/IPShortcut.git', :tag => s.version.to_s }
