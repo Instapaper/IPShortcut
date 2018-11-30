@@ -1,6 +1,5 @@
 # IPShortcut
 
-[![CI Status](https://img.shields.io/travis/Brian Donohue/IPShortcut.svg?style=flat)](https://travis-ci.org/Brian Donohue/IPShortcut)
 [![Version](https://img.shields.io/cocoapods/v/IPShortcut.svg?style=flat)](https://cocoapods.org/pods/IPShortcut)
 [![License](https://img.shields.io/cocoapods/l/IPShortcut.svg?style=flat)](https://cocoapods.org/pods/IPShortcut)
 [![Platform](https://img.shields.io/cocoapods/p/IPShortcut.svg?style=flat)](https://cocoapods.org/pods/IPShortcut)
